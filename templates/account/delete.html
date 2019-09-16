@@ -13,7 +13,7 @@
     
     <form method="post" action="{% url "account_delete" %}" autocapitalize="off">
         {% csrf_token %}
-        <button type="submit" class="btn btn-danger">{% trans "Delete My Account" %}</button>
+        <button type="submit" class="btn btn-danger" disabled="disabled">{% trans "Delete My Account" %}</button>
     </form>
     
 {% endblock %}
